@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Academic Platform</title>
+
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- 顶部Logo -->
+<div class="top-logo">
+  <img src="logo.png" alt="Oshawn Academic Platform Logo"/>
+</div>
+
+<!-- 顶部导航（新增“项目”+ 搜索🔍） -->
+<nav class="navbar">
+  <a data-target="home" class="active" role="button">首页</a>
+  <a data-target="math" role="button">数学</a>
+  <a data-target="physics" role="button">物理</a>
+  <a data-target="mech" role="button">机电</a>
+  <a data-target="program" role="button">编程语言</a>
+   <a data-target="algorithm" role="button">算法</a>
+  <a data-target="signal" role="button">信号控制系统</a>
+  <a data-target="log" role="button">学术日志</a>
+  <a data-target="projects" role="button">项目</a>
+<a data-target="password" role="button">密码学</a>
+  <a data-target="music" role="button">音乐</a>
+  <a data-target="others" role="button">其他</a>
+
+  <span class="spacer"></span>
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜索课程/模块…"/>
+    <span class="search-icon" id="searchBtn">🔍</span>
+  </div>
+</nav>
+
+<div class="main">
+  <!-- 左竖栏（同步新增“项目”） -->
+  <aside class="side-menu">
+    <a data-target="home" class="active" role="button">首页</a>
+    <a data-target="math" role="button">数学课程</a>
+    <a data-target="physics" role="button">物理课程</a>
+    <a data-target="mech" role="button">机电系统</a>
+    <a data-target="program" role="button">编程语言</a>
+      <a data-target="algorithm" role="button">算法</a>
+    <a data-target="signal" role="button">信号控制</a>
+    <a data-target="log" role="button">学术日志</a>
+    <a data-target="projects" role="button">项目</a>
+
+<a data-target="password" role="button">密码学</a>
+  <a data-target="music" role="button">音乐</a>
+  <a data-target="others" role="button">其他</a>
+
+
+
+  </aside>
+
+  <!-- 右侧内容 -->
+  <section class="content">
+
+    <!-- 首页 -->
+    <div id="home" class="section active">
+
+  <!-- 上半部分 欢迎语 -->
+  <div class="home-header">
+    <h2>欢迎来到 Oshawn Academic Platform</h2>
+    <p>这里汇聚了我的数学、物理、机电与控制研究内容。  
+    你可以在此了解项目、讲义与研究记录。</p>
+  </div>
+
+  <!-- 下半部分 社交平台区域 -->
+  <div class="social-section">
+    <div class="social-left">
+      <h3>🌐 关注我的平台</h3>
+      <a href="https://space.bilibili.com/388315729" target="_blank" title="Bilibili">📺<span>Bilibili</span></a>
+      <a href="https://www.youtube.com/@OshawnXi" target="_blank" title="YouTube">▶️<span>YouTube</span></a>
+      <a href="https://github.com/Oshawn369" target="_blank" title="Github">G<span>Github</span></a>
+      <a href="https://www.instagram.com/haiyang_xi?igsh=MXZoMWlldmozZmFkZw%3D%3D&utm_source=qr" target="_blank" title="Instagram">📸<span>Instagram</span></a>
+      <a href="https://x.com/xihaiyang3?s=21" target="_blank" title="X (Twitter)">🐦<span>X</span></a>
+    <a href="https://x.com/xihaiyang3?s=21" target="_blank" title="facebook"><span>facebook</span></a>
+
+    </div>
+
+    <div class="social-intro">
+      <h3>关于这个网站</h3>
+      <p>这是我的个人学术平台，用于分享控制理论、数学讲义与工程项目。
+      在这些社交平台中，我会定期发布：</p>
+      <ul>
+        <li>📘 控制系统实验日志</li>
+        <li>🧠 数学讲义与建模视频</li>
+        <li>🤖 嵌入式机器人开发记录</li>
+        <li>🪀 Lead44 品牌研究项目动态</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
+
+
+    
+   <!-- ===============================
+     数学课程主页面（index.html 中 math 部分）
+     =============================== -->
+
+<div id="math" class="section">
+  <h2>数学课程 Mathematics</h2>
+  <p>本栏目汇集数学分析、代数、拓扑、微积分与傅立叶分析等核心课程。</p>
+
+  <div class="course-grid">
+
+    <div class="course-card" data-include="math/1foundations/found.html"  tabindex="0">
+      <h3>1数学基础 Foundations</h3>
+    </div>
+
+    <div class="course-card" data-include="math/2calculus/cal.html"  tabindex="0">
+      <h3>2微积分 Calculus</h3>
+    </div>
+
+    <div class="course-card" data-include="math/3matrixoperation/matrix.html"  tabindex="0">
+      <h3>3矩阵运算 Matrix Operations</h3>
+    </div>
+
+    <div class="course-card" data-include="math/4ode/ode.html" data-target="ode" tabindex="0">
+      <h3>4常微分方程 ODE</h3>
+    </div>
+<div class="course-card" data-include="math/8basictopology/basictop.html" data-target="basictopology" tabindex="0">
+      <h3>5经典变分法</h3>
+    </div>
+    <div class="course-card" data-include="math/5mathanalysis/mathysis.html" data-target="mathanalysis" tabindex="0">
+      <h3>6数学分析 Mathematical Analysis</h3>
+    </div>
+
+    <div class="course-card" data-include="math/6linearalgebra/linear.html" data-target="linearalgebra" tabindex="0">
+      <h3>7线性代数 Linear Algebra</h3>
+    </div>
+
+    <div class="course-card" data-include="math/7complexanalysis/complexysis.html" data-target="complexanalysis" tabindex="0">
+      <h3>8复分析 Complex Analysis</h3>
+    </div>
+
+
+
+
+   <div class="course-card" data-include="math/8basictopology/basictop.html" data-target="basictopology" tabindex="0">
+      <h3>9基础 拓扑 Basic Topology</h3>
+    </div>
+
+    <div class="course-card" data-include="math/9abstractalgebra/abstract.html" data-target="abstractalgebra" tabindex="0">
+      <h3>10抽象代数 Abstract Algebra</h3>
+    </div>
+ <div class="course-card" data-include="math/11realanalysis/realysis.html" data-target="realanalysis" tabindex="0">
+      <h3>11实分析 Real Analysis</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>12测度概率论</h3>
+    </div>
+<div class="course-card" data-include="math/12fourieranalysis/fourierlysis.html" data-target="fourieranalysis" tabindex="0">
+      <h3>13傅立叶分析 Fourier Analysis</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>14调和分析 Harmonic Analysis</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>15积分变换 Interga transformation</h3>
+    </div>
+    <div class="course-card" data-include="math/11realanalysis/realysis.html" data-target="realanalysis" tabindex="0">
+      <h3>16自守函数</h3>
+    </div>
+ <div class="course-card" data-include="math/14pde/pde.html" data-target="pde" tabindex="0">
+      <h3>17偏微分方程 PDE</h3>
+    </div>
+    <div class="course-card" data-include="math/13functionalanalysis/functionalysis.html" data-target="functionalanalysis" tabindex="0">
+      <h3>18矩阵分析 Functional Analysis</h3>
+    </div>
+ <div class="course-card" data-include="math/13functionalanalysis/functionalysis.html" data-target="functionalanalysis" tabindex="0">
+      <h3>19泛函分析 Functional Analysis</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>20算子理论</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>21微分流形</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>22张量分析</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>23微分几何</h3>
+    </div>
+
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>24李群李代数 Algebraic Topology</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>25辛几何</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>26纤维丛</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>27代数拓扑 Algebraic Topology</h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>28几何pde/h3>
+    </div>
+    <div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>29群表示论</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>30交换代数 convex analysis</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>31同调代数</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>32动力系统</h3>
+    </div>
+   
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>33凸分析 convex analysis</h3>
+    </div>
+<div class="course-card" data-include="math/10algebraictopology/algetop.html" data-target="algebraictopology" tabindex="0">
+      <h3>34变分法</h3>
+    </div>
+
+   
+   
+    
+   
+
+    
+
+   
+
+   
+
+    <div class="course-card" data-include="math/16elementarynumbertheory/elementarynum.html" data-target="elementarynumber" tabindex="0">
+      <h3>初等数论 Elementary Number Theory</h3>
+    </div>
+
+  </div>
+</div>
+  
+     
+  
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+    <!-- 物理 -->
+    <div id="physics" class="section">
+      <h2>物理课程</h2>
+      <div class="course-grid">
+        <div class="course-card" data-include="phy/mechanics/main.html" tabindex="0"><h4>经典力学</h4><p>牛顿、拉格朗日与哈密顿体系。</p></div>
+        <div class="course-card" data-include="phy/electromag/main.html" tabindex="0"><h4>电磁学</h4><p>麦克斯韦方程与控制应用。</p></div>
+        
+      </div>
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 机电 -->
+    <div id="mech" class="section">
+      <h2>机电系统</h2>
+      <div class="course-grid">
+        <div class="course-card" data-include="embedded" tabindex="0"><h4>嵌入式控制</h4><p>Raspberry Pi + ROS 控制系统。</p></div>
+        <div class="course-card" data-include="actuator" tabindex="0"><h4>执行器设计</h4><p>电机与舵机动力学。</p></div>
+        <div class="course-card" data-include="sensor" tabindex="0"><h4>传感器系统</h4><p>IMU、温度与超声波测量。</p></div>
+      </div>
+    </div>
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 编程 -->
+    <div id="program" class="section">
+      <h2>编程语言</h2>
+      <div class="course-grid">
+        <div class="course-card" data-target="python" tabindex="0"><h4>Python</h4><p>科研脚本与数据分析。</p></div>
+        <div class="course-card" data-target="cpp" tabindex="0"><h4>C++</h4><p>高性能系统编程。</p></div>
+        <div class="course-card" data-target="matlab" tabindex="0"><h4>MATLAB</h4><p>控制与信号仿真。</p></div>
+        <div class="course-card" data-target="c" tabindex="0"><h4>c</h4><p>科研脚本与数据分析。</p></div>
+        <div class="course-card" data-target="rust" tabindex="0"><h4>Rust</h4><p>高性能系统编程。</p></div>
+        <div class="course-card" data-target="julia" tabindex="0"><h4>julia</h4><p>控制与信号仿真。</p></div>
+        <div class="course-card" data-target="ros2" tabindex="0"><h4>ros2</h4><p>科研脚本与数据分析。</p></div>
+       
+        
+
+        
+
+      </div>
+    </div>
+
+   
+
+    
+   
+ 
+
+   
+
+   
+
+ 
+
+
+
+
+
+    <div id="algorithm" class="section">
+      <h2>算法</h2>
+      <div class="course-grid">
+        <div class="course-card" data-target="mathbasic" tabindex="0"><h4>数学基础之算法</h4><p>牛顿、拉格朗日与哈密顿体系。</p></div>
+        <div class="course-card" data-target="path" tabindex="0"><h4>路径规划</h4><p></p></div>
+        <div class="course-card" data-target="optimization" tabindex="0"><h4>最优化</h4><p>。</p></div>
+      </div>
+    </div>
+
+   
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 信号控制 -->
+    <div id="signal" class="section">
+
+      <h2>信号控制系统</h2>
+      <div class="course-grid">
+        <div class="course-card" data-target="signalsys" tabindex="0"><h4>信号与系统</h4><p>时域/频域分析、拉普拉斯/傅立叶。</p></div>
+        <div class="course-card" data-target="classic" tabindex="0"><h4>经典控制</h4><p>不确定系统与 H∞/μ 综合。</p></div>
+        <div class="course-card" data-target="modern" tabindex="0"><h4>现代控制</h4><p>辨识、参数估计与 NN-PID。</p></div>
+        <div class="course-card" data-target="robust" tabindex="0"><h4>鲁棒控制</h4><p>不确定系统与 H∞/μ 综合。</p></div>
+        <div class="course-card" data-target="adaptive" tabindex="0"><h4>自适应控制</h4><p>辨识、参数估计与 NN-PID。</p></div>
+      </div>
+
+    </div>
+
+   <!-- 课程标题与简介 -->
+    
+
+  <!-- 课程标题与简介 -->
+    
+     
+  
+
+
+   
+
+
+   
+   
+
+
+
+
+
+
+    <!-- 学术日志 -->
+    <div id="log" class="section">
+      <h2>学术日志</h2>
+      <p>记录每日研究进展与反思。</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 项目 -->
+    <div id="projects" class="section">
+      <h2>科研与工程项目 Projects</h2>
+      <div class="course-grid">
+        <div class="course-card" tabindex="0"><h4>UGV 控制系统开发</h4><p>Raspberry Pi 6B 无人地面车控制。</p></div>
+        <div class="course-card" tabindex="0"><h4>PSO-BP PID 优化</h4><p>粒子群 + BP 神经网络优化 PID。</p></div>
+        <div class="course-card" tabindex="0"><h4>多平台协同控制</h4><p>卫星–无人机–机器人鲁棒协作。</p></div>
+        <div class="course-card" tabindex="0"><h4>解析拓扑理论研究</h4><p>解析结构与拓扑控制融合。</p></div>
+      </div>
+    </div>
+
+
+<div id="password" class="section">
+      <h2>密码学</h2>
+      <div class="course-grid">
+        <div class="course-card" data-target="basic" tabindex="0"><h4>密码学基础<p>密码学基础。</p></div>
+        
+      </div>
+    </div>
+
+
+    <div id="music" class="section">
+      <h2>音乐</h2>
+      <div class="course-grid">
+        <div class="course-card" data-target="music theory" tabindex="0"><h4>乐理</h4><p>乐理 调号 旋律</p></div>
+       
+      </div>
+    </div>
+
+
+  </section>
+</div>
+
+
+ 
+
+
+
+<footer>© 2025 Oshawn Academic Platform</footer>
+
+
+<script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
